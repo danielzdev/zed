@@ -1,0 +1,66 @@
+{
+    "vim_mode": true,
+    "vim": {
+        "toggle_relative_line_numbers": true
+    },
+    "base_keymap": "VSCode",
+    "ui_font_size": 16,
+    "buffer_font_size": 16,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "theme": "One Dark",
+    "tab_size": 4,
+    "pane_split_direction_vertical": "right",
+    "pane_split_direction_horizontal": "down",
+    "restore_on_startup": "none",
+    "preferred_line_length": 120,
+    "always_treat_brackets_as_autoclosed": true,
+    "extend_comment_on_newline": false,
+    "format_on_save": "off",
+    "double_click_in_multibuffer": "open",
+    "features": {
+      "inline_completion_provider": "none"
+    },
+    "scrollbar": {
+        "show": "never"
+    },
+    "gutter": {
+        "code_actions": false,
+        "runnables": false
+    },
+    "auto_install_extensions": {
+        "html": false
+    },
+    "project_panel": {
+        "button": false
+    },
+    "outline_panel": {
+        "button": false
+    },
+    "collaboration_panel": {
+        "button": false
+    },
+    "chat_panel": {
+        "button": false
+    },
+    "terminal": {
+        "dock": "right",
+        "button": false
+    },
+    "assistant": {
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-5-sonnet-20240620"
+        },
+        "button": false,
+        "version": "2"
+    },
+    "git": {
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+    "toolbar": {
+      "breadcrumbs": true,
+      "quick_actions": false
+    }
+}

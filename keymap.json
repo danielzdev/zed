@@ -1,0 +1,61 @@
+[
+    {
+        "context": "VimControl && !menu && vim_mode == normal",
+        "bindings": {
+            "shift-h": "pane::ActivatePrevItem",
+            "shift-l": "pane::ActivateNextItem",
+            "space b c": "pane::CloseInactiveItems",
+            "space space": "file_finder::Toggle",
+            "space f f": "file_finder::Toggle",
+            "space l a": "editor::ToggleCodeActions",
+            "space l f": "editor::Format"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-`": "workspace::ToggleRightDock"
+        }
+    },
+    {
+        "context": "VimControl && !menu || Dock",
+        "bindings": {
+            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+            "space e": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "VimControl && !menu && vim_mode != operator",
+        "bindings": {
+            "w": "vim::NextSubwordStart",
+            "b": "vim::PreviousSubwordStart",
+            "e": "vim::NextSubwordEnd"
+        }
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "a": "project_panel::NewFile",
+            "A": "project_panel::NewDirectory",
+            "r": "project_panel::Rename",
+            "d": "project_panel::Delete"
+        }
+    },
+    {
+        "context": "vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore"
+        }
+    },
+    {
+        "context": "EmptyPane || SharedScreen",
+        "bindings": {
+            "space space": "file_finder::Toggle",
+            "space f f": "file_finder::Toggle",
+            "space e": "workspace::ToggleLeftDock"
+        }
+    }
+]
