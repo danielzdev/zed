@@ -20,6 +20,9 @@
     "features": {
       "inline_completion_provider": "none"
     },
+    "preview_tabs": {
+        "enabled": false
+    },
     "scrollbar": {
         "show": "never"
     },
