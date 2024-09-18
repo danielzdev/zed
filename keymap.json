@@ -19,7 +19,8 @@
             "space b c": "pane::CloseInactiveItems",
             "space g p": "editor::ToggleHunkDiff",
             "space t r": "task::Rerun",
-            "space t s": "task::Spawn"
+            "space t s": "task::Spawn",
+            "space t t": "workspace::ToggleBottomDock"
         }
     },
     // Quality of life keymaps
