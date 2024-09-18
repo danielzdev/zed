@@ -1,22 +1,28 @@
 [
+    // Editor keymaps
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-`": "workspace::ToggleBottomDock"
+        }
+    },
+    // Normal mode keymaps
     {
         "context": "VimControl && !menu && vim_mode == normal",
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
-            "space b c": "pane::CloseInactiveItems",
             "space space": "file_finder::Toggle",
             "space f f": "file_finder::Toggle",
             "space l a": "editor::ToggleCodeActions",
-            "space l f": "editor::Format"
+            "space l f": "editor::Format",
+            "space b c": "pane::CloseInactiveItems",
+            "space g p": "editor::ToggleHunkDiff",
+            "space t r": "task::Rerun",
+            "space t s": "task::Spawn"
         }
     },
-    {
-        "context": "Workspace",
-        "bindings": {
-            "cmd-`": "workspace::ToggleRightDock"
-        }
-    },
+    // Quality of life keymaps
     {
         "context": "VimControl && !menu || Dock",
         "bindings": {
@@ -24,7 +30,18 @@
             "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
             "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
             "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+        }
+    },
+    {
+        "context": "VimControl && !menu || ProjectPanel",
+        "bindings": {
             "space e": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore"
         }
     },
     {
@@ -44,12 +61,7 @@
             "d": "project_panel::Delete"
         }
     },
-    {
-        "context": "vim_mode == insert",
-        "bindings": {
-            "j k": "vim::NormalBefore"
-        }
-    },
+    // Nothing window in focus keymaps
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
@@ -57,5 +69,5 @@
             "space f f": "file_finder::Toggle",
             "space e": "workspace::ToggleLeftDock"
         }
-    }
+    },
 ]
