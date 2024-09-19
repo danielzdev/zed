@@ -47,14 +47,6 @@
         }
     },
     {
-        "context": "VimControl && !menu && vim_mode != operator",
-        "bindings": {
-            "w": "vim::NextSubwordStart",
-            "b": "vim::PreviousSubwordStart",
-            "e": "vim::NextSubwordEnd"
-        }
-    },
-    {
         "context": "ProjectPanel && not_editing",
         "bindings": {
             "a": "project_panel::NewFile",
