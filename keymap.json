@@ -12,6 +12,7 @@
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
+            "space a c": "workspace::ToggleRightDock",
             "space space": "file_finder::Toggle",
             "space f f": "file_finder::Toggle",
             "space l a": "editor::ToggleCodeActions",
