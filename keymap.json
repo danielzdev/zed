@@ -1,11 +1,4 @@
 [
-    // Editor keymaps
-    {
-        "context": "Workspace",
-        "bindings": {
-            "cmd-`": "workspace::ToggleBottomDock"
-        }
-    },
     // Normal mode keymaps
     {
         "context": "VimControl && !menu && vim_mode == normal",
@@ -25,7 +18,14 @@
             "space t t": "workspace::ToggleBottomDock"
         }
     },
-    // Quality of life keymaps
+    // Visual mode mappings
+    {
+        "context": "VimControl && !menu && vim_mode == visual",
+        "bindings": {
+            "a c": "assistant::QuoteSelection"
+        }
+    },
+    // Window movement
     {
         "context": "VimControl && !menu || Dock",
         "bindings": {
@@ -41,6 +41,7 @@
             "space e": "workspace::ToggleLeftDock"
         }
     },
+    // Better escape
     {
         "context": "vim_mode == insert",
         "bindings": {
@@ -56,7 +57,7 @@
             "d": "project_panel::Delete"
         }
     },
-    // Nothing window in focus keymaps
+    // No window in focus keymaps
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
