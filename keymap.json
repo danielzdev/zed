@@ -5,16 +5,18 @@
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
+            "space b c": "pane::CloseInactiveItems",
             "space a c": "workspace::ToggleRightDock",
             "space space": "file_finder::Toggle",
             "space f f": "file_finder::Toggle",
             "space l a": "editor::ToggleCodeActions",
             "space l r": "editor::Rename",
             "space l f": "editor::Format",
-            "space b c": "pane::CloseInactiveItems",
             "space g p": "editor::ToggleHunkDiff",
-            "space t r": "task::Rerun",
+            "space g d": "editor::ExpandAllHunkDiffs",
+            "space g r": "editor::RevertSelectedHunks",
             "space t s": "task::Spawn",
+            "space t r": "task::Rerun",
             "space t t": "workspace::ToggleBottomDock"
         }
     },
