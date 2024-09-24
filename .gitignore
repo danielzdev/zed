@@ -1,4 +1,5 @@
-*
-!keymaps.json
-!settings.json
-!.gitignore
+# Ignore specific folders
+conversations/
+embeddings/
+prompts/
+themes/
