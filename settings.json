@@ -32,8 +32,7 @@
     },
     "auto_install_extensions": {
         "html": false,
-        "python": true,
-        "rust": true
+        "git-firefly": true
     },
     "project_panel": {
         "button": false
