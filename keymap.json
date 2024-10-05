@@ -1,10 +1,20 @@
 [
-    // Normal mode keymaps
+    // Editor
+    {
+        "context": "Workspace",
+        "bindings": {
+          "cmd-1": "workspace::ToggleLeftDock",
+          "cmd-2": "workspace::ToggleRightDock",
+          "cmd-`": "workspace::ToggleBottomDock"
+        }
+      },
+    // Normal mode
     {
         "context": "VimControl && !menu && vim_mode == normal",
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
+            "g d": "editor::GoToDefinition",
             "space b c": "pane::CloseInactiveItems",
             "space a c": "workspace::ToggleRightDock",
             "space space": "file_finder::Toggle",
@@ -17,39 +27,25 @@
             "space g r": "editor::RevertSelectedHunks",
             "space t s": "task::Spawn",
             "space t r": "task::Rerun",
-            "space t t": "workspace::ToggleBottomDock"
+            "space t t": "workspace::ToggleBottomDock",
+            "space x x": "diagnostics::Deploy"
         }
     },
-    // Visual mode mappings
+    // Visual mode
     {
         "context": "VimControl && !menu && vim_mode == visual",
         "bindings": {
             "a c": "assistant::QuoteSelection"
         }
     },
-    // Window movement
-    {
-        "context": "VimControl && !menu || Dock",
-        "bindings": {
-            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-        }
-    },
-    {
-        "context": "VimControl && !menu || ProjectPanel",
-        "bindings": {
-            "space e": "workspace::ToggleLeftDock"
-        }
-    },
-    // Better escape
+    // Insert mode
     {
         "context": "vim_mode == insert",
         "bindings": {
             "j k": "vim::NormalBefore"
         }
     },
+    // Filetree keymaps
     {
         "context": "ProjectPanel && not_editing",
         "bindings": {
@@ -59,7 +55,22 @@
             "d": "project_panel::Delete"
         }
     },
-    // No window in focus keymaps
+    // MISC
+    {
+        "context": "VimControl && !menu || Dock",
+        "bindings": {
+            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+        }
+    },
+    {
+        "context": "VimControl && !menu || ProjectPanel",
+        "bindings": {
+            "space e": "workspace::ToggleLeftDock"
+        }
+    },
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
@@ -67,5 +78,5 @@
             "space f f": "file_finder::Toggle",
             "space e": "workspace::ToggleLeftDock"
         }
-    },
+    }
 ]
