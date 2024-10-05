@@ -32,6 +32,7 @@
     },
     "auto_install_extensions": {
         "html": false,
+        "zedokai": true,
         "git-firefly": true
     },
     "project_panel": {
