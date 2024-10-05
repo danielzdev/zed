@@ -7,7 +7,7 @@
           "cmd-2": "workspace::ToggleRightDock",
           "cmd-`": "workspace::ToggleBottomDock"
         }
-      },
+    },
     // Normal mode
     {
         "context": "VimControl && !menu && vim_mode == normal",
@@ -19,12 +19,14 @@
             "space a c": "workspace::ToggleRightDock",
             "space space": "file_finder::Toggle",
             "space f f": "file_finder::Toggle",
-            "space l a": "editor::ToggleCodeActions",
-            "space l r": "editor::Rename",
-            "space l f": "editor::Format",
             "space g p": "editor::ToggleHunkDiff",
             "space g d": "editor::ExpandAllHunkDiffs",
             "space g r": "editor::RevertSelectedHunks",
+            "space l a": "editor::ToggleCodeActions",
+            "space l r": "editor::Rename",
+            "space l f": "editor::Format",
+            "space p o": "workspace::Open",
+            "space p r": "projects::OpenRecent",
             "space t s": "task::Spawn",
             "space t r": "task::Rerun",
             "space t t": "workspace::ToggleBottomDock",
@@ -74,9 +76,10 @@
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
-            "space space": "file_finder::Toggle",
-            "space f f": "file_finder::Toggle",
-            "space e": "workspace::ToggleLeftDock"
+            "space e": "workspace::ToggleLeftDock",
+            "space p o": "workspace::Open",
+            "space p r": "projects::OpenRecent",
+            "space space": "file_finder::Toggle"
         }
     }
 ]

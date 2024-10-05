@@ -22,7 +22,6 @@
         }
     },
     // Extensions & Features
-    "language_servers": ["pyright"],
     "auto_install_extensions": {
         "html": false,
         "git-firefly": true,

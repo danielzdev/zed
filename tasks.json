@@ -1,0 +1,6 @@
+[
+  {
+    "label": "Run java file",
+    "command": "java *.java"
+  }
+]
