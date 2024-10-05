@@ -1,5 +1,5 @@
-# Ignore specific folders
 conversations/
 embeddings/
 prompts/
 themes/
+.DS_Store
