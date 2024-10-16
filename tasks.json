@@ -1,7 +1,7 @@
 [
-  {
-      "label": "Spawn live-server",
-      "command": "live-server",
-      "reveal": "never"
-  }
+    {
+        "label": "Spawn live-server",
+        "command": "live-server",
+        "reveal": "never"
+    }
 ]

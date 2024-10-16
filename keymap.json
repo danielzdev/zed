@@ -1,13 +1,4 @@
 [
-    // Editor
-    {
-        "context": "Workspace",
-        "bindings": {
-          "cmd-1": "workspace::ToggleLeftDock",
-          "cmd-2": "workspace::ToggleRightDock",
-          "cmd-`": "workspace::ToggleBottomDock"
-        }
-    },
     // Normal mode
     {
         "context": "VimControl && !menu && vim_mode == normal",
@@ -38,6 +29,7 @@
             "space x x": "diagnostics::Deploy"
         }
     },
+
     // Visual mode
     {
         "context": "VimControl && !menu && vim_mode == visual",
@@ -45,6 +37,7 @@
             "a c": "assistant::QuoteSelection"
         }
     },
+
     // Insert mode
     {
         "context": "vim_mode == insert",
@@ -52,6 +45,17 @@
             "j k": "vim::NormalBefore"
         }
     },
+
+    // Editor
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-1": "workspace::ToggleLeftDock",
+            "cmd-2": "workspace::ToggleRightDock",
+            "cmd-`": "workspace::ToggleBottomDock"
+        }
+    },
+
     // Filetree keymaps
     {
         "context": "ProjectPanel && not_editing",
@@ -62,6 +66,7 @@
             "d": "project_panel::Delete"
         }
     },
+
     // MISC
     {
         "context": "VimControl && !menu || Dock",
