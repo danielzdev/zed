@@ -17,6 +17,7 @@
             "g d": "editor::GoToDefinition",
             "g i": "editor::GoToImplementation",
             "g r": "editor::FindAllReferences",
+            "g e": "editor::OpenExcerpts",
             "space v": "pane::SplitVertical",
             "space h": "pane::SplitHorizontal",
             "space b c": "pane::CloseInactiveItems",
@@ -84,6 +85,13 @@
             "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
             "space space": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor && (showing_code_actions || showing_completions)",
+        "bindings": {
+            "ctrl-k": "editor::ContextMenuPrev",
+            "ctrl-j": "editor::ContextMenuNext"
         }
     }
 ]

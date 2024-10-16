@@ -1,6 +1,7 @@
 [
   {
-    "label": "Run java file",
-    "command": "java *.java"
+      "label": "Spawn live-server",
+      "command": "live-server",
+      "reveal": "never"
   }
 ]

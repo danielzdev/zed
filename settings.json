@@ -1,76 +1,86 @@
 {
-    // Vim
-    "vim_mode": true,
-    "vim": {
-        "toggle_relative_line_numbers": true
-    },
-    // Editor
-    "base_keymap": "VSCode",
-    "tab_size": 4,
-    "pane_split_direction_vertical": "right",
-    "pane_split_direction_horizontal": "down",
-    "restore_on_startup": "none",
-    "preferred_line_length": 120,
-    "always_treat_brackets_as_autoclosed": true,
-    "extend_comment_on_newline": false,
-    "format_on_save": "off",
-    "double_click_in_multibuffer": "open",
-    // Git
-    "git": {
-        "inline_blame": {
-            "enabled": false
-        }
-    },
-    // Extensions & Features
-    "auto_install_extensions": {
-        "html": false,
-        "git-firefly": true,
-        "zedokai": true
-    },
-    "assistant": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-20240620"
-        },
-        "button": false,
-        "version": "2"
-    },
-    "features": {
-        "inline_completion_provider": "none"
-    },
-    // UI
-    "ui_font_size": 16,
-    "buffer_font_size": 16,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "theme": "Zedokai",
-    "terminal": {
-        "button": false,
-        "cursor_shape": "bar"
-    },
-    "scrollbar": {
-        "show": "never"
-    },
-    "preview_tabs": {
-        "enabled": false
-    },
-    "gutter": {
-        "code_actions": false,
-        "runnables": false
-    },
-    "toolbar": {
-        "breadcrumbs": false,
-        "quick_actions": false
-    },
-    "project_panel": {
-        "button": false
-    },
-    "outline_panel": {
-        "button": false
-    },
-    "collaboration_panel": {
-        "button": false
-    },
-    "chat_panel": {
-        "button": false
-    }
+	// Vim
+	"vim_mode": true,
+	"vim": {
+		"toggle_relative_line_numbers": true
+	},
+	// Editor
+	"base_keymap": "VSCode",
+	"tab_size": 4,
+	"pane_split_direction_vertical": "right",
+	"pane_split_direction_horizontal": "down",
+	"restore_on_startup": "none",
+	"preferred_line_length": 120,
+	"always_treat_brackets_as_autoclosed": true,
+	"extend_comment_on_newline": false,
+	"format_on_save": "off",
+	// Languages
+	"languages": {
+		"JavaScript": {
+			"formatter": {
+				"external": {
+					"command": "prettier"
+				}
+			}
+		}
+	},
+	// Git
+	"git": {
+		"inline_blame": {
+			"enabled": false
+		}
+	},
+	// Extensions & Features
+	"auto_install_extensions": {
+		"biome": true,
+		"emmet": true,
+		"git-firefly": true,
+		"zedokai": true
+	},
+	"assistant": {
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-3-5-sonnet-20240620"
+		},
+		"button": false,
+		"version": "2"
+	},
+	"features": {
+		"inline_completion_provider": "none"
+	},
+	// UI
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"theme": "Zedokai",
+	"terminal": {
+		"button": false,
+		"cursor_shape": "bar"
+	},
+	"scrollbar": {
+		"show": "never"
+	},
+	"preview_tabs": {
+		"enabled": false
+	},
+	"gutter": {
+		"code_actions": false,
+		"runnables": false
+	},
+	"toolbar": {
+		"breadcrumbs": false,
+		"quick_actions": false
+	},
+	"project_panel": {
+		"button": false
+	},
+	"outline_panel": {
+		"button": false
+	},
+	"collaboration_panel": {
+		"button": false
+	},
+	"chat_panel": {
+		"button": false
+	}
 }
