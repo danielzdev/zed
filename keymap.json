@@ -36,7 +36,11 @@
     {
         "context": "VimControl && !menu && vim_mode == visual",
         "bindings": {
-            "a c": "assistant::QuoteSelection"
+            "a c": "assistant::QuoteSelection",
+            "ctrl->": "vim::Indent",
+            ">": ["workspace::SendKeystrokes", "ctrl-> g v"],
+            "ctrl-<": "vim::Outdent",
+            "<": ["workspace::SendKeystrokes", "ctrl-< g v"]
         }
     },
 
