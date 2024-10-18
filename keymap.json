@@ -21,28 +21,28 @@
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
             "g d": "editor::GoToDefinition",
+            "g e": "editor::OpenExcerpts",
             "g i": "editor::GoToImplementation",
             "g r": "editor::FindAllReferences",
-            "g e": "editor::OpenExcerpts",
             "space v": "pane::SplitVertical",
             "space h": "pane::SplitHorizontal",
-            "space b o": "pane::CloseInactiveItems",
             "space a c": "assistant::ToggleFocus",
-            "space space": "file_finder::Toggle",
+            "space b o": "pane::CloseInactiveItems",
             "space f f": "file_finder::Toggle",
-            "space g p": "editor::ToggleHunkDiff",
             "space g d": "editor::ExpandAllHunkDiffs",
+            "space g p": "editor::ToggleHunkDiff",
             "space g r": "editor::RevertSelectedHunks",
             "space l a": "editor::ToggleCodeActions",
-            "space l r": "editor::Rename",
             "space l f": "editor::Format",
+            "space l r": "editor::Rename",
             "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
             "space t l": ["task::Spawn", { "task_name": "Spawn live-server" }],
-            "space t s": "task::Spawn",
             "space t r": "task::Rerun",
+            "space t s": "task::Spawn",
             "space t t": "workspace::ToggleBottomDock",
-            "space x x": "diagnostics::Deploy"
+            "space x x": "diagnostics::Deploy",
+            "space space": "file_finder::Toggle"
         }
     },
 
@@ -81,9 +81,9 @@
         "context": "ProjectPanel && not_editing",
         "bindings": {
             "a": "project_panel::NewFile",
-            "A": "project_panel::NewDirectory",
+            "d": "project_panel::Delete",
             "r": "project_panel::Rename",
-            "d": "project_panel::Delete"
+            "A": "project_panel::NewDirectory"
         }
     },
 
@@ -107,6 +107,7 @@
         "context": "EmptyPane || SharedScreen",
         "bindings": {
             "space e": "workspace::ToggleLeftDock",
+            "space a c": "assistant::ToggleFocus",
             "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
             "space space": "file_finder::Toggle"
