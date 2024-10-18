@@ -3,10 +3,5 @@
         "label": "Spawn live-server",
         "command": "live-server",
         "reveal": "never"
-    },
-    {
-        "label": "lazygit",
-        "command": "lazygit",
-        "reveal": "always"
     }
 ]
