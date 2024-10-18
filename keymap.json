@@ -1,7 +1,22 @@
 [
+    // Normal and Visual mode
+    {
+        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+        "bindings": {
+            "g f": "editor::OpenExcerpts",
+            "space f p": "projects::OpenRecent",
+            "space f w": "pane::DeploySearch",
+            "space g p": "editor::ToggleHunkDiff",
+            "space g r": "editor::RevertSelectedHunks",
+            "space m p": "markdown::OpenPreview",
+            "space m P": "markdown::OpenPreviewToTheSide",
+            "space t i": "editor::ToggleInlayHints"
+        }
+    },
+
     // Normal mode
     {
-        "context": "VimControl && !menu && vim_mode == normal",
+        "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
@@ -11,8 +26,8 @@
             "g e": "editor::OpenExcerpts",
             "space v": "pane::SplitVertical",
             "space h": "pane::SplitHorizontal",
-            "space b c": "pane::CloseInactiveItems",
-            "space a c": "workspace::ToggleRightDock",
+            "space b o": "pane::CloseInactiveItems",
+            "space a c": "assistant::ToggleFocus",
             "space space": "file_finder::Toggle",
             "space f f": "file_finder::Toggle",
             "space g g": ["task::Spawn", { "task_name": "lazygit" }],
@@ -34,7 +49,7 @@
 
     // Visual mode
     {
-        "context": "VimControl && !menu && vim_mode == visual",
+        "context": "VimControl && !menu && !VimWaiting && vim_mode == visual",
         "bindings": {
             "a c": "assistant::QuoteSelection",
             "ctrl->": "vim::Indent",
