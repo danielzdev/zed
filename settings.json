@@ -1,6 +1,6 @@
 {
     // Settings
-    "theme": "Zedokai",
+    "theme": "Nordic",
     "base_keymap": "VSCode",
     "ui_font_size": 16,
     "buffer_font_size": 16,
@@ -39,7 +39,7 @@
         "emmet": true,
         "git-firefly": true,
         "java": true,
-        "zedokai": true
+        "nordic-theme": true
     },
     "assistant": {
         "default_model": {
