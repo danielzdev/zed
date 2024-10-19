@@ -109,6 +109,7 @@
             "space a c": "assistant::ToggleFocus",
             "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
+            "space t t": "workspace::ToggleBottomDock",
             "space space": "file_finder::Toggle"
         }
     },
