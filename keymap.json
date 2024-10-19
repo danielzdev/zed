@@ -9,8 +9,7 @@
             "space g p": "editor::ToggleHunkDiff",
             "space g r": "editor::RevertSelectedHunks",
             "space m p": "markdown::OpenPreview",
-            "space m P": "markdown::OpenPreviewToTheSide",
-            "space t i": "editor::ToggleInlayHints"
+            "space m P": "markdown::OpenPreviewToTheSide"
         }
     },
 
@@ -37,7 +36,7 @@
             "space l r": "editor::Rename",
             "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
-            "space t l": ["task::Spawn", { "task_name": "Spawn live-server" }],
+            "space t i": "editor::ToggleInlayHints",
             "space t r": "task::Rerun",
             "space t s": "task::Spawn",
             "space t t": "workspace::ToggleBottomDock",

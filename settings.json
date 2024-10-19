@@ -1,6 +1,5 @@
 {
-    // Settings
-    "theme": "Nordic",
+    "theme": "Gruvbox Material",
     "base_keymap": "VSCode",
     "ui_font_size": 16,
     "buffer_font_size": 16,
@@ -15,31 +14,18 @@
     "extend_comment_on_newline": false,
     "format_on_save": "off",
     "restore_on_startup": "none",
-
-    // Languages
-    "languages": {
-        "HTML": {
-            "tab_size": 2
-        },
-        "CSS": {
-            "tab_size": 2
-        },
-        "JavaScript": {
-            "tab_size": 2,
-            "formatter": {
-                "external": {
-                    "command": "prettier"
-                }
-            }
-        }
-    },
-
-    // Extensions & Features
     "auto_install_extensions": {
         "emmet": true,
         "git-firefly": true,
-        "java": true,
-        "nordic-theme": true
+        "gruvbox-material": true
+    },
+    "git": {
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+    "features": {
+        "inline_completion_provider": "none"
     },
     "assistant": {
         "default_model": {
@@ -49,18 +35,6 @@
         "button": false,
         "version": "2"
     },
-    "features": {
-        "inline_completion_provider": "none"
-    },
-
-    // Git
-    "git": {
-        "inline_blame": {
-            "enabled": false
-        }
-    },
-
-    // UI
     "terminal": {
         "button": false,
         "cursor_shape": "bar"
