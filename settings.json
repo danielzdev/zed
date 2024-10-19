@@ -38,6 +38,7 @@
     "auto_install_extensions": {
         "emmet": true,
         "git-firefly": true,
+        "java": true,
         "zedokai": true
     },
     "assistant": {
