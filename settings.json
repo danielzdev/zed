@@ -23,7 +23,8 @@
     "auto_install_extensions": {
         "emmet": true,
         "git-firefly": true,
-        "gruvbox-material": true
+        "ocean-dark-motifs": true,
+        "toml": true
     },
     "git": {
         "inline_blame": {
