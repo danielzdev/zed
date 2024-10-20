@@ -7,12 +7,9 @@
             "space f p": "projects::OpenRecent",
             "space f w": "pane::DeploySearch",
             "space g p": "editor::ToggleHunkDiff",
-            "space g r": "editor::RevertSelectedHunks",
-            "space m p": "markdown::OpenPreview",
-            "space m P": "markdown::OpenPreviewToTheSide"
+            "space g r": "editor::RevertSelectedHunks"
         }
     },
-
     // Normal mode
     {
         "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
@@ -23,18 +20,12 @@
             "g e": "editor::OpenExcerpts",
             "g i": "editor::GoToImplementation",
             "g r": "editor::FindAllReferences",
-            "space v": "pane::SplitVertical",
-            "space h": "pane::SplitHorizontal",
             "space a c": "assistant::ToggleFocus",
             "space b o": "pane::CloseInactiveItems",
-            "space f f": "file_finder::Toggle",
             "space g d": "editor::ExpandAllHunkDiffs",
-            "space g p": "editor::ToggleHunkDiff",
-            "space g r": "editor::RevertSelectedHunks",
             "space l a": "editor::ToggleCodeActions",
             "space l f": "editor::Format",
             "space l r": "editor::Rename",
-            "space p o": "workspace::Open",
             "space p r": "projects::OpenRecent",
             "space t i": "editor::ToggleInlayHints",
             "space t r": "task::Rerun",
@@ -44,7 +35,6 @@
             "space space": "file_finder::Toggle"
         }
     },
-
     // Visual mode
     {
         "context": "VimControl && !menu && !VimWaiting && vim_mode == visual",
@@ -56,7 +46,6 @@
             "<": ["workspace::SendKeystrokes", "ctrl-< g v"]
         }
     },
-
     // Insert mode
     {
         "context": "vim_mode == insert",
@@ -64,7 +53,6 @@
             "j k": "vim::NormalBefore"
         }
     },
-
     // Editor
     {
         "context": "Workspace",
@@ -74,7 +62,6 @@
             "cmd-`": "workspace::ToggleBottomDock"
         }
     },
-
     // Filetree keymaps
     {
         "context": "ProjectPanel && not_editing",
@@ -85,8 +72,7 @@
             "A": "project_panel::NewDirectory"
         }
     },
-
-    // MISC
+    // Movement between docks
     {
         "context": "VimControl && !menu || Dock",
         "bindings": {
@@ -96,12 +82,14 @@
             "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
         }
     },
+    // Enbales space e to toggle project panel
     {
         "context": "VimControl && !menu || ProjectPanel",
         "bindings": {
             "space e": "workspace::ToggleLeftDock"
         }
     },
+    // Keymaps when nothing is open
     {
         "context": "EmptyPane || SharedScreen",
         "bindings": {
@@ -113,6 +101,7 @@
             "space space": "file_finder::Toggle"
         }
     },
+    // Move up and down completions/code actions
     {
         "context": "Editor && (showing_code_actions || showing_completions)",
         "bindings": {
