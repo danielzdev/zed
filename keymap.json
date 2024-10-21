@@ -1,28 +1,21 @@
 [
-    // Normal and Visual mode
-    {
-        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-        "bindings": {
-            "g f": "editor::OpenExcerpts",
-            "space f p": "projects::OpenRecent",
-            "space f w": "pane::DeploySearch",
-            "space g p": "editor::ToggleHunkDiff",
-            "space g r": "editor::RevertSelectedHunks"
-        }
-    },
     // Normal mode
     {
         "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
         "bindings": {
             "shift-h": "pane::ActivatePrevItem",
             "shift-l": "pane::ActivateNextItem",
+            "] h": "editor::GoToHunk",
+            "[ h": "editor::GoToPrevHunk",
             "g d": "editor::GoToDefinition",
-            "g e": "editor::OpenExcerpts",
+            "g f": "editor::OpenExcerpts",
             "g i": "editor::GoToImplementation",
             "g r": "editor::FindAllReferences",
             "space a c": "assistant::ToggleFocus",
             "space b o": "pane::CloseInactiveItems",
+            "space f w": "pane::DeploySearch",
             "space g d": "editor::ExpandAllHunkDiffs",
+            "space g g": ["task::Spawn", { "task_name": "lazygit" }],
             "space l a": "editor::ToggleCodeActions",
             "space l f": "editor::Format",
             "space l r": "editor::Rename",
@@ -44,6 +37,14 @@
             ">": ["workspace::SendKeystrokes", "ctrl-> g v"],
             "ctrl-<": "vim::Outdent",
             "<": ["workspace::SendKeystrokes", "ctrl-< g v"]
+        }
+    },
+    // Normal and Visual mode
+    {
+        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+        "bindings": {
+            "space g p": "editor::ToggleHunkDiff",
+            "space g r": "editor::RevertSelectedHunks"
         }
     },
     // Insert mode
@@ -79,13 +80,7 @@
             "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
             "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
             "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
-        }
-    },
-    // Enbales space e to toggle project panel
-    {
-        "context": "VimControl && !menu || ProjectPanel",
-        "bindings": {
+            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
             "space e": "workspace::ToggleLeftDock"
         }
     },

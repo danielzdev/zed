@@ -1,5 +1,5 @@
 {
-    "theme": "Ocean Dark Motifs",
+    "theme": "Nordic",
     "base_keymap": "VSCode",
     "vim_mode": true,
     "vim": { "toggle_relative_line_numbers": true },
@@ -15,15 +15,8 @@
     "extend_comment_on_newline": false,
     "format_on_save": "off",
     "restore_on_startup": "none",
-    "languages": {
-        "HTML": {
-            "tab_size": 2
-        }
-    },
     "auto_install_extensions": {
-        "emmet": true,
         "git-firefly": true,
-        "ocean-dark-motifs": true,
         "toml": true
     },
     "git": {
