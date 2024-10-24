@@ -56,6 +56,13 @@
     },
     // Editor
     {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-j": "menu::SelectNext",
+            "ctrl-k": "menu::SelectPrev"
+        }
+    },
+    {
         "context": "Workspace",
         "bindings": {
             "cmd-1": "workspace::ToggleLeftDock",
