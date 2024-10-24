@@ -17,7 +17,8 @@
     "restore_on_startup": "none",
     "auto_install_extensions": {
         "git-firefly": true,
-        "toml": true
+        "html": false,
+        "java-eclipse-jdtls": true
     },
     "git": {
         "inline_blame": {
