@@ -16,7 +16,6 @@
             "space f w": "pane::DeploySearch",
             "space g d": "editor::ExpandAllHunkDiffs",
             "space g g": ["task::Spawn", { "task_name": "lazygit" }],
-            "space l a": "editor::ToggleCodeActions",
             "space l f": "editor::Format",
             "space l r": "editor::Rename",
             "space p r": "projects::OpenRecent",
@@ -44,7 +43,8 @@
         "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
         "bindings": {
             "space g p": "editor::ToggleHunkDiff",
-            "space g r": "editor::RevertSelectedHunks"
+            "space g r": "editor::RevertSelectedHunks",
+            "space l a": "editor::ToggleCodeActions"
         }
     },
     // Insert mode
