@@ -16,9 +16,8 @@
     "format_on_save": "off",
     "restore_on_startup": "none",
     "auto_install_extensions": {
-        "git-firefly": true,
-        "html": false,
-        "java-eclipse-jdtls": true
+        "emmet": true,
+        "git-firefly": true
     },
     "git": {
         "inline_blame": {
