@@ -15,10 +15,19 @@
     "extend_comment_on_newline": false,
     "format_on_save": "off",
     "restore_on_startup": "none",
+    "languages": {
+        "CSS": {
+            "tab_size": 2
+        },
+        "HTML": {
+            "tab_size": 2
+        }
+    },
     "auto_install_extensions": {
         "emmet": true,
         "git-firefly": true,
-        "java-eclipse-jdtls": true
+        "java-eclipse-jdtls": true,
+        "zedokai": true
     },
     "git": {
         "inline_blame": {
