@@ -1,10 +1,10 @@
 {
-    "theme": "Nordic",
+    "theme": "Zedokai",
     "base_keymap": "VSCode",
     "vim_mode": true,
     "vim": { "toggle_relative_line_numbers": true },
-    "ui_font_size": 16,
-    "buffer_font_size": 16,
+    "ui_font_size": 15,
+    "buffer_font_size": 15,
     "buffer_font_family": "JetBrainsMono Nerd Font",
     "buffer_font_features": { "calt": false },
     "tab_size": 4,
