@@ -11,6 +11,7 @@
             "g f": "editor::OpenExcerpts",
             "g i": "editor::GoToImplementation",
             "g r": "editor::FindAllReferences",
+            "space w": "workspace::Save",
             "space a c": "assistant::ToggleFocus",
             "space b o": "pane::CloseInactiveItems",
             "space f w": "pane::DeploySearch",
