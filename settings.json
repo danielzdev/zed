@@ -15,6 +15,15 @@
     "extend_comment_on_newline": false,
     "format_on_save": "off",
     "restore_on_startup": "none",
+    "lsp": {
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "lineLength": 120
+                }
+            }
+        }
+    },
     "languages": {
         "CSS": {
             "tab_size": 4
@@ -24,6 +33,16 @@
         },
         "JavaScript": {
             "tab_size": 4
+        },
+        "Python": {
+            "language_servers": ["pyright", "ruff"],
+            "formatter": [
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
         }
     },
     "auto_install_extensions": {
