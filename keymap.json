@@ -1,122 +1,122 @@
 [
-    // Normal mode
-    {
-        "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-        "bindings": {
-            "shift-h": "pane::ActivatePrevItem",
-            "shift-l": "pane::ActivateNextItem",
-            "] h": "editor::GoToHunk",
-            "[ h": "editor::GoToPrevHunk",
-            "g d": "editor::GoToDefinition",
-            "g f": "editor::OpenExcerpts",
-            "g i": "editor::GoToImplementation",
-            "g r": "editor::FindAllReferences",
-            "space w": "workspace::Save",
-            "space a c": "assistant::ToggleFocus",
-            "space b o": "pane::CloseInactiveItems",
-            "space f w": "pane::DeploySearch",
-            "space g d": "editor::ExpandAllHunkDiffs",
-            "space g g": ["task::Spawn", { "task_name": "lazygit" }],
-            "space l f": "editor::Format",
-            "space l r": "editor::Rename",
-            "space p r": "projects::OpenRecent",
-            "space t i": "editor::ToggleInlayHints",
-            "space t r": "task::Rerun",
-            "space t s": "task::Spawn",
-            "space t t": "workspace::ToggleBottomDock",
-            "space x x": "diagnostics::Deploy",
-            "space space": "file_finder::Toggle"
-        }
-    },
-    // Visual mode
-    {
-        "context": "VimControl && !menu && !VimWaiting && vim_mode == visual",
-        "bindings": {
-            "a c": "assistant::QuoteSelection",
-            "ctrl->": "vim::Indent",
-            ">": ["workspace::SendKeystrokes", "ctrl-> g v"],
-            "ctrl-<": "vim::Outdent",
-            "<": ["workspace::SendKeystrokes", "ctrl-< g v"]
-        }
-    },
-    // Normal and Visual mode
-    {
-        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-        "bindings": {
-            "space g p": "editor::ToggleHunkDiff",
-            "space g r": "editor::RevertSelectedHunks",
-            "space l a": "editor::ToggleCodeActions"
-        }
-    },
-    // Insert mode
-    {
-        "context": "vim_mode == insert",
-        "bindings": {
-            "j k": "vim::NormalBefore",
-            "shift-enter": "vim::InsertLineBelow"
-        }
-    },
-    // Editor
-    {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-j": "menu::SelectNext",
-            "ctrl-k": "menu::SelectPrev"
-        }
-    },
-    {
-        "context": "Workspace",
-        "bindings": {
-            "cmd-1": "workspace::ToggleLeftDock",
-            "cmd-2": "workspace::ToggleRightDock",
-            "cmd-`": "workspace::ToggleBottomDock"
-        }
-    },
-    // Filetree keymaps
-    {
-        "context": "ProjectPanel && not_editing",
-        "bindings": {
-            "a": "project_panel::NewFile",
-            "d": "project_panel::Delete",
-            "r": "project_panel::Rename",
-            "A": "project_panel::NewDirectory"
-        }
-    },
-    // Movement between docks
-    {
-        "context": "VimControl && !menu || Dock",
-        "bindings": {
-            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
-        }
-    },
-    // Enbales space e to toggle project panel
-    {
-        "context": "VimControl && !menu || ProjectPanel",
-        "bindings": {
-            "space e": "workspace::ToggleLeftDock"
-        }
-    },
-    // Keymaps when nothing is open
-    {
-        "context": "EmptyPane || SharedScreen",
-        "bindings": {
-            "space e": "workspace::ToggleLeftDock",
-            "space a c": "assistant::ToggleFocus",
-            "space p o": "workspace::Open",
-            "space p r": "projects::OpenRecent",
-            "space t t": "workspace::ToggleBottomDock",
-            "space space": "file_finder::Toggle"
-        }
-    },
-    // Move up and down completions/code actions
-    {
-        "context": "Editor && (showing_code_actions || showing_completions)",
-        "bindings": {
-            "ctrl-k": "editor::ContextMenuPrev",
-            "ctrl-j": "editor::ContextMenuNext"
-        }
+  // Normal mode
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
+      "] h": "editor::GoToHunk",
+      "[ h": "editor::GoToPrevHunk",
+      "g d": "editor::GoToDefinition",
+      "g f": "editor::OpenExcerpts",
+      "g i": "editor::GoToImplementation",
+      "g r": "editor::FindAllReferences",
+      "space w": "workspace::Save",
+      "space a c": "assistant::ToggleFocus",
+      "space b o": "pane::CloseInactiveItems",
+      "space f w": "pane::DeploySearch",
+      "space g d": "editor::ExpandAllHunkDiffs",
+      "space g g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+      "space p r": "projects::OpenRecent",
+      "space t i": "editor::ToggleInlayHints",
+      "space t r": "task::Rerun",
+      "space t s": "task::Spawn",
+      "space t t": "workspace::ToggleBottomDock",
+      "space x x": "diagnostics::Deploy",
+      "space space": "file_finder::Toggle"
     }
+  },
+  // Visual mode
+  {
+    "context": "VimControl && !menu && !VimWaiting && vim_mode == visual",
+    "bindings": {
+      "a c": "assistant::QuoteSelection",
+      "ctrl->": "vim::Indent",
+      ">": ["workspace::SendKeystrokes", "ctrl-> g v"],
+      "ctrl-<": "vim::Outdent",
+      "<": ["workspace::SendKeystrokes", "ctrl-< g v"]
+    }
+  },
+  // Normal and Visual mode
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "space g p": "editor::ToggleHunkDiff",
+      "space g r": "editor::RevertSelectedHunks",
+      "space l a": "editor::ToggleCodeActions"
+    }
+  },
+  // Insert mode
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+      "shift-enter": "vim::InsertLineBelow"
+    }
+  },
+  // Editor
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrev"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-1": "workspace::ToggleLeftDock",
+      "cmd-2": "workspace::ToggleRightDock",
+      "cmd-`": "workspace::ToggleBottomDock"
+    }
+  },
+  // Filetree keymaps
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "A": "project_panel::NewDirectory"
+    }
+  },
+  // Movement between docks
+  {
+    "context": "VimControl && !menu || Dock",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  // Enbales space e to toggle project panel
+  {
+    "context": "VimControl && !menu || ProjectPanel",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
+  // Keymaps when nothing is open
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock",
+      "space a c": "assistant::ToggleFocus",
+      "space p o": "workspace::Open",
+      "space p r": "projects::OpenRecent",
+      "space t t": "workspace::ToggleBottomDock",
+      "space space": "file_finder::Toggle"
+    }
+  },
+  // Move up and down completions/code actions
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-j": "editor::ContextMenuNext"
+    }
+  }
 ]

@@ -1,85 +1,86 @@
 {
-    "theme": "Zedokai",
-    "base_keymap": "VSCode",
-    "vim_mode": true,
-    "vim": { "toggle_relative_line_numbers": true },
-    "ui_font_size": 15,
-    "buffer_font_size": 15,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "buffer_font_features": { "calt": false },
-    "tab_size": 4,
-    "preferred_line_length": 120,
-    "vertical_scroll_margin": 15,
-    "pane_split_direction_vertical": "right",
-    "pane_split_direction_horizontal": "down",
-    "extend_comment_on_newline": false,
-    "format_on_save": "off",
-    "restore_on_startup": "none",
-    "lsp": {
-        "ruff": {
-            "initialization_options": {
-                "settings": {
-                    "lineLength": 120
-                }
-            }
+  "theme": "Nordic",
+  "base_keymap": "VSCode",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 15,
+  "ui_font_size": 15,
+  "vim_mode": true,
+  "buffer_font_features": { "calt": false },
+  "cursor_blink": false,
+  "extend_comment_on_newline": false,
+  "features": { "inline_completion_provider": "none" },
+  "format_on_save": "off",
+  "pane_split_direction_horizontal": "down",
+  "pane_split_direction_vertical": "right",
+  "preferred_line_length": 120,
+  "relative_line_numbers": true,
+  "restore_on_startup": "none",
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "vertical_scroll_margin": 15,
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 120
         }
-    },
-    "languages": {
-        "CSS": {
-            "tab_size": 4
-        },
-        "HTML": {
-            "tab_size": 4
-        },
-        "JavaScript": {
-            "tab_size": 4
-        },
-        "Python": {
-            "language_servers": ["pyright", "ruff"],
-            "formatter": [
-                {
-                    "language_server": {
-                        "name": "ruff"
-                    }
-                }
-            ]
-        }
-    },
-    "auto_install_extensions": {
-        "emmet": true,
-        "git-firefly": true,
-        "zedokai": true
-    },
-    "git": {
-        "inline_blame": {
-            "enabled": false
-        }
-    },
-    "assistant": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
-        },
-        "button": false,
-        "version": "2"
-    },
-    "terminal": {
-        "button": false,
-        "cursor_shape": "bar"
-    },
-    "features": { "inline_completion_provider": "none" },
-    "scrollbar": { "show": "never" },
-    "preview_tabs": { "enabled": false },
-    "project_panel": { "button": false },
-    "outline_panel": { "button": false },
-    "collaboration_panel": { "button": false },
-    "chat_panel": { "button": false },
-    "gutter": {
-        "code_actions": false,
-        "runnables": false
-    },
-    "toolbar": {
-        "breadcrumbs": false,
-        "quick_actions": false
+      }
     }
+  },
+  "languages": {
+    "CSS": { "tab_size": 4 },
+    "HTML": { "tab_size": 4 },
+    "JavaScript": { "tab_size": 2 },
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  "auto_install_extensions": {
+    "emmet": true,
+    "git-firefly": true,
+    "java-eclipse-jdtls": true,
+    "nordic-theme": true,
+    "ruff": true,
+    "toml": true
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "button": false,
+    "version": "2"
+  },
+  "terminal": {
+    "button": false,
+    "cursor_shape": "bar"
+  },
+  "scrollbar": { "show": "never" },
+  "preview_tabs": { "enabled": false },
+  "project_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "chat_panel": { "button": false },
+  "gutter": {
+    "code_actions": false,
+    "runnables": false
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  }
 }
