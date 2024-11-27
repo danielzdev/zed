@@ -9,7 +9,7 @@
   "cursor_blink": false,
   "extend_comment_on_newline": false,
   "features": { "inline_completion_provider": "none" },
-  "format_on_save": "off",
+  "format_on_save": "on",
   "pane_split_direction_horizontal": "down",
   "pane_split_direction_vertical": "right",
   "preferred_line_length": 120,
