@@ -22,7 +22,9 @@
   },
   "languages": {
     "C": {
-      "tab_size": 4,
+      "format_on_save": "off"
+    },
+    "Java": {
       "format_on_save": "off"
     }
   },
@@ -31,7 +33,6 @@
     "git-firefly": true,
     "java-eclipse-jdtls": true,
     "nordic-theme": true,
-    "ruff": true,
     "toml": true
   },
   "git": {
