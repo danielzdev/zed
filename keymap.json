@@ -118,5 +118,12 @@
       "ctrl-k": "editor::ContextMenuPrev",
       "ctrl-j": "editor::ContextMenuNext"
     }
+  },
+  // Create new terminal pane
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-n": "workspace::NewTerminal"
+    }
   }
 ]
