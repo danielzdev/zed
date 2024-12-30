@@ -18,7 +18,8 @@
   "vertical_scroll_margin": 15,
   "tabs": {
     "git_status": true,
-    "file_icons": true
+    "file_icons": true,
+    "show_diagnostics": "all"
   },
   "languages": {
     "C": {
