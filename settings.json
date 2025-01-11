@@ -53,6 +53,10 @@
     "button": false,
     "cursor_shape": "bar"
   },
+  "experimental.theme_overrides": {
+    "editor.document_highlight.write_background": "#00000000",
+    "editor.document_highlight.read_background": "#00000000"
+  },
   "scrollbar": { "show": "never" },
   "preview_tabs": { "enabled": false },
   "project_panel": { "button": false },

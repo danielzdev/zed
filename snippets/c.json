@@ -1,5 +1,5 @@
 {
-  "Create a main function": {
+  "main": {
     "prefix": "main",
     "body": [
       "int main() {",
