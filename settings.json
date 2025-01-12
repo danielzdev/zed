@@ -16,6 +16,7 @@
   "relative_line_numbers": true,
   "restore_on_startup": "none",
   "vertical_scroll_margin": 15,
+  "always_treat_brackets_as_autoclosed": true,
   "tabs": {
     "git_status": true,
     "file_icons": true,
