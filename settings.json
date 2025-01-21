@@ -35,9 +35,9 @@
   },
   "auto_install_extensions": {
     "emmet": true,
+    "everforest": true,
     "git-firefly": true,
     "java-eclipse-jdtls": true,
-    "nordic-theme": true,
     "toml": true
   },
   "git": {
