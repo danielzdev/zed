@@ -33,6 +33,7 @@
     "everforest": true,
     "git-firefly": true,
     "java-eclipse-jdtls": true,
+    "material-icon": true,
     "toml": true
   },
   "git": {
