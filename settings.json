@@ -9,7 +9,7 @@
   "buffer_font_features": { "calt": false },
   "cursor_blink": false,
   "extend_comment_on_newline": false,
-  "features": { "inline_completion_provider": "none" },
+  "features": { "edit_prediction_provider": "zed" },
   "format_on_save": "on",
   "pane_split_direction_horizontal": "down",
   "pane_split_direction_vertical": "right",
@@ -32,7 +32,6 @@
     "emmet": true,
     "everforest": true,
     "git-firefly": true,
-    "java-eclipse-jdtls": true,
     "material-icon": true,
     "toml": true
   },
