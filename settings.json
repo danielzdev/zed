@@ -9,7 +9,6 @@
   "buffer_font_features": { "calt": false },
   "cursor_blink": false,
   "extend_comment_on_newline": false,
-  "features": { "edit_prediction_provider": "zed" },
   "format_on_save": "on",
   "pane_split_direction_horizontal": "down",
   "pane_split_direction_vertical": "right",
@@ -18,6 +17,7 @@
   "restore_on_startup": "none",
   "vertical_scroll_margin": 15,
   "always_treat_brackets_as_autoclosed": true,
+  "features": { "edit_prediction_provider": "none" },
   "tabs": {
     "git_status": true,
     "file_icons": true,
