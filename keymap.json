@@ -43,7 +43,7 @@
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      "space g p": "editor::ToggleHunkDiff",
+      "space g p": "editor::ToggleSelectedDiffHunks",
       "space g r": "editor::RevertSelectedHunks",
       "space l a": "editor::ToggleCodeActions"
     }
@@ -86,10 +86,10 @@
   {
     "context": "VimControl && !menu || Dock",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   // Enbales space e to toggle project panel
