@@ -56,6 +56,16 @@
       "shift-enter": "vim::InsertLineBelow"
     }
   },
+  // Git panel && vim mode?
+  {
+    "context": "GitPanel && ChangesList",
+    "bindings": {
+      "a": "git::StageAll",
+      "d": "git::RestoreFile",
+      "c": "git::ShowCommitEditor",
+      "u": "git::UnstageAll"
+    }
+  },
   // Editor
   {
     "context": "Editor",
