@@ -1,5 +1,5 @@
 {
-  "theme": "Everforest Dark",
+  "theme": "Nordic",
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -23,6 +23,78 @@
     "file_icons": true,
     "show_diagnostics": "all"
   },
+  "lsp": {
+    "jdtls": {
+      "initialization_options": {
+        "bundles": [],
+        "settings": {
+          "java": {
+            "home": "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home",
+            "configuration": {
+              "updateBuildConfiguration": "interactive",
+              "maven": {
+                "userSettings": null
+              }
+            },
+            "trace": {
+              "server": "verbose"
+            },
+            "import": {
+              "maven": {
+                "enabled": true
+              },
+              "exclusions": [
+                "**/node_modules/**",
+                "**/.metadata/**",
+                "**/archetype-resources/**",
+                "**/META-INF/maven/**",
+                "/**/test/**"
+              ]
+            },
+            "jdt": {
+              "ls": {
+                "lombokSupport": {
+                  "enabled": true
+                }
+              }
+            },
+            "referencesCodeLens": {
+              "enabled": true
+            },
+            "signatureHelp": {
+              "enabled": false
+            },
+            "implementationsCodeLens": {
+              "enabled": true
+            },
+            "format": {
+              "enabled": true
+            },
+            "saveActions": {
+              "organizeImports": false
+            },
+            "contentProvider": {
+              "preferred": null
+            },
+            "autobuild": {
+              "enabled": false
+            },
+            "completion": {
+              "favoriteStaticMembers": [
+                "org.junit.Assert.*",
+                "org.junit.Assume.*",
+                "org.junit.jupiter.api.Assertions.*",
+                "org.junit.jupiter.api.Assumptions.*",
+                "org.junit.jupiter.api.DynamicContainer.*",
+                "org.junit.jupiter.api.DynamicTest.*"
+              ],
+              "importOrder": ["java", "javax", "com", "org"]
+            }
+          }
+        }
+      }
+    }
+  },
   "languages": {
     "Java": {
       "format_on_save": "off"
@@ -32,6 +104,7 @@
     "emmet": true,
     "everforest": true,
     "git-firefly": true,
+    "java": true,
     "material-icon": true,
     "toml": true
   },

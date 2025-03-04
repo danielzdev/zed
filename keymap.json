@@ -3,10 +3,10 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
       "] h": "editor::GoToHunk",
-      "[ h": "editor::GoToPrevHunk",
+      "[ h": "editor::GoToPreviousHunk",
       "g d": "editor::GoToDefinition",
       "g f": "editor::OpenExcerpts",
       "g i": "editor::GoToImplementation",
@@ -15,8 +15,8 @@
       "space a c": "assistant::ToggleFocus",
       "space b o": "pane::CloseInactiveItems",
       "space f w": "pane::DeploySearch",
-      "space g d": "editor::ExpandAllHunkDiffs",
-      "space g g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space g d": "editor::ExpandAllDiffHunks",
+      "space g g": "git_panel::ToggleFocus",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
       "space p r": "projects::OpenRecent",
@@ -44,7 +44,7 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space g p": "editor::ToggleSelectedDiffHunks",
-      "space g r": "editor::RevertSelectedHunks",
+      "space g r": "git::Restore",
       "space l a": "editor::ToggleCodeActions"
     }
   },
@@ -61,7 +61,7 @@
     "context": "Editor",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "vim::SelectPrevious"
     }
   },
   {
@@ -96,7 +96,7 @@
   {
     "context": "VimControl && !menu || ProjectPanel",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "project_panel::ToggleFocus"
     }
   },
   // Keymaps when nothing is open
@@ -115,7 +115,7 @@
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
-      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-k": "editor::ContextMenuPrevious",
       "ctrl-j": "editor::ContextMenuNext"
     }
   },
