@@ -1,10 +1,5 @@
 [
   {
-    "label": "lazygit",
-    "command": "lazygit",
-    "hide": "on_success"
-  },
-  {
     "label": "browser sync",
     "command": "browser-sync start --server --files \"./*\"",
     "hide": "on_success"
