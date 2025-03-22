@@ -62,7 +62,7 @@
     "bindings": {
       "a": "git::StageAll",
       "d": "git::RestoreFile",
-      "c": "git::ShowCommitEditor",
+      "c": "git::Commit",
       "u": "git::UnstageAll"
     }
   },
