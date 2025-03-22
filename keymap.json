@@ -17,9 +17,12 @@
       "space f w": "pane::DeploySearch",
       "space g d": "editor::ExpandAllDiffHunks",
       "space g g": "git_panel::ToggleFocus",
+      "space g s": "git::ToggleStaged",
+      "space g D": "git::Diff",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
       "space p r": "projects::OpenRecent",
+      "space s o": "outline::Toggle",
       "space t i": "editor::ToggleInlayHints",
       "space t r": "task::Rerun",
       "space t s": "task::Spawn",
@@ -63,7 +66,8 @@
       "a": "git::StageAll",
       "d": "git::RestoreFile",
       "c": "git::Commit",
-      "u": "git::UnstageAll"
+      "u": "git::UnstageAll",
+      "q": "workspace::ToggleLeftDock"
     }
   },
   // Editor
@@ -92,6 +96,12 @@
       "A": "project_panel::NewDirectory"
     }
   },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
   // Movement between docks
   {
     "context": "VimControl && !menu || Dock",
@@ -104,16 +114,16 @@
   },
   // Enbales space e to toggle project panel
   {
-    "context": "VimControl && !menu || ProjectPanel",
+    "context": "VimControl && !menu",
     "bindings": {
       "space e": "project_panel::ToggleFocus"
     }
   },
   // Keymaps when nothing is open
   {
-    "context": "EmptyPane || SharedScreen",
+    "context": "EmptyPane",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::ToggleFocus",
       "space a c": "assistant::ToggleFocus",
       "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
