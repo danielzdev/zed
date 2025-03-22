@@ -27,6 +27,7 @@
     "bearded": true,
     "emmet": true,
     "git-firefly": true,
+    "ini": true,
     "poimandres": true,
     "toml": true
   },
