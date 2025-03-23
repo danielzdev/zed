@@ -21,6 +21,7 @@
       "space g D": "git::Diff",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
+      "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
       "space s o": "outline::Toggle",
       "space t i": "editor::ToggleInlayHints",
@@ -59,7 +60,7 @@
       "shift-enter": "vim::InsertLineBelow"
     }
   },
-  // Git panel && vim mode?
+  // Git panel
   {
     "context": "GitPanel && ChangesList",
     "bindings": {
@@ -67,6 +68,7 @@
       "d": "git::RestoreFile",
       "c": "git::Commit",
       "u": "git::UnstageAll",
+      "p": "git::Push",
       "q": "workspace::ToggleLeftDock"
     }
   },
@@ -75,7 +77,7 @@
     "context": "Editor",
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "vim::SelectPrevious"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   {
@@ -88,18 +90,20 @@
   },
   // Filetree keymaps
   {
-    "context": "ProjectPanel && not_editing",
+    "context": "ProjectPanel",
     "bindings": {
       "a": "project_panel::NewFile",
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
-      "A": "project_panel::NewDirectory"
+      "A": "project_panel::NewDirectory",
+      "space e": "workspace::ToggleLeftDock"
     }
   },
+  // Enables space e to toggle project panel
   {
-    "context": "ProjectPanel",
+    "context": "VimControl && !menu || EmptyPane",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "project_panel::ToggleFocus"
     }
   },
   // Movement between docks
@@ -112,22 +116,14 @@
       "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
-  // Enbales space e to toggle project panel
-  {
-    "context": "VimControl && !menu",
-    "bindings": {
-      "space e": "project_panel::ToggleFocus"
-    }
-  },
   // Keymaps when nothing is open
   {
     "context": "EmptyPane",
     "bindings": {
-      "space e": "project_panel::ToggleFocus",
       "space a c": "assistant::ToggleFocus",
       "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
-      "space t t": "workspace::ToggleBottomDock",
+      "space t t": "terminal_panel::ToggleFocus",
       "space space": "file_finder::Toggle"
     }
   },
