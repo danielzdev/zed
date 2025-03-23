@@ -41,6 +41,7 @@
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
     },
+    "enable_experimental_live_diffs": true,
     "button": false,
     "version": "2"
   },
