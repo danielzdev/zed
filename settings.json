@@ -24,12 +24,11 @@
     "show_diagnostics": "all"
   },
   "auto_install_extensions": {
-    "bearded": true,
+    "bearded-icon-theme": true,
     "emmet": true,
     "git-firefly": true,
     "ini": true,
     "nordic-theme": true,
-    "poimandres": true,
     "toml": true
   },
   "git": {
