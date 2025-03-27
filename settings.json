@@ -17,7 +17,9 @@
   "restore_on_startup": "none",
   "vertical_scroll_margin": 15,
   "always_treat_brackets_as_autoclosed": true,
-  "features": { "edit_prediction_provider": "none" },
+  "features": { "edit_prediction_provider": "zed" },
+  "edit_predictions": { "mode": "subtle" },
+  "use_system_prompts": false,
   "tabs": {
     "git_status": true,
     "file_icons": true,
