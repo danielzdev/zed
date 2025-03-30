@@ -141,5 +141,11 @@
     "bindings": {
       "cmd-n": "workspace::NewTerminal"
     }
+  },
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel",
+    "bindings": {
+      "cmd-w": "workspace::ToggleLeftDock"
+    }
   }
 ]
