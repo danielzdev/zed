@@ -14,7 +14,7 @@
   "pane_split_direction_vertical": "right",
   "preferred_line_length": 120,
   "relative_line_numbers": true,
-  "restore_on_startup": "none",
+  "restore_on_startup": "last_session",
   "vertical_scroll_margin": 15,
   "always_treat_brackets_as_autoclosed": true,
   "features": { "edit_prediction_provider": "zed" },
@@ -37,6 +37,9 @@
     "inline_blame": {
       "enabled": false
     }
+  },
+  "git_panel": {
+    "button": false
   },
   "assistant": {
     "default_model": {
