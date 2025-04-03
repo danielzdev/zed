@@ -25,7 +25,7 @@
       "space l r": "editor::Rename",
       "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
-      "space s o": "outline::Toggle",
+      "space s o": "outline_panel::ToggleFocus",
       "space t i": "editor::ToggleInlayHints",
       "space t r": "task::Rerun",
       "space t s": "task::Spawn",
