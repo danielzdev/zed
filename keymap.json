@@ -18,6 +18,7 @@
       "space b o": "pane::CloseInactiveItems",
       "space f w": "pane::DeploySearch",
       "space f g": "workspace::NewSearch",
+      "space g c": "git::ExpandCommitEditor",
       "space g d": "editor::ExpandAllDiffHunks",
       "space g g": "git_panel::ToggleFocus",
       "space g s": "git::ToggleStaged",
