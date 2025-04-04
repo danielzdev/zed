@@ -1,7 +1,7 @@
 [
   {
-    "label": "browser sync",
-    "command": "browser-sync start --server --files \"./*\"",
+    "label": "Run live server",
+    "command": "live-server",
     "hide": "on_success"
   }
 ]

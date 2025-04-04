@@ -17,6 +17,7 @@
       "space a c": "assistant::ToggleFocus",
       "space b o": "pane::CloseInactiveItems",
       "space f w": "pane::DeploySearch",
+      "space f g": "workspace::NewSearch",
       "space g d": "editor::ExpandAllDiffHunks",
       "space g g": "git_panel::ToggleFocus",
       "space g s": "git::ToggleStaged",
@@ -98,6 +99,7 @@
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
       "A": "project_panel::NewDirectory",
+      "z": "project_panel::CollapseAllEntries",
       "space e": "workspace::ToggleLeftDock"
     }
   },
