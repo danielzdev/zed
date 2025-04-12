@@ -2,6 +2,6 @@
   {
     "label": "Run live server",
     "command": "live-server",
-    "hide": "on_success"
+    "hide": "always"
   }
 ]
