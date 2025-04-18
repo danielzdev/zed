@@ -16,6 +16,7 @@
       "space w": "workspace::Save",
       "space a c": "assistant::ToggleFocus",
       "space b o": "pane::CloseInactiveItems",
+      "space f k": "zed::OpenKeymap",
       "space f w": "pane::DeploySearch",
       "space f g": "workspace::NewSearch",
       "space g c": "git::ExpandCommitEditor",
