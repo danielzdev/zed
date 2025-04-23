@@ -22,6 +22,7 @@
       "space g c": "git::ExpandCommitEditor",
       "space g d": "editor::ExpandAllDiffHunks",
       "space g g": "git_panel::ToggleFocus",
+      "space g l": ["task::Spawn", { "task_name": "lazygit", "reveal_target": "center" }],
       "space g s": "git::ToggleStaged",
       "space g D": "git::Diff",
       "space l f": "editor::Format",
