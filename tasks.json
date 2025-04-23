@@ -3,5 +3,10 @@
     "label": "Run live server",
     "command": "live-server",
     "hide": "always"
+  },
+  {
+    "label": "lazygit",
+    "command": "lazygit",
+    "hide": "always"
   }
 ]
