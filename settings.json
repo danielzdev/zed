@@ -31,10 +31,10 @@
     "show_diagnostics": "all"
   },
   "auto_install_extensions": {
-    "bearded-icon-theme": true,
     "emmet": true,
     "git-firefly": true,
     "ini": true,
+    "material-icon-theme": true,
     "nordic-theme": true,
     "toml": true
   },
