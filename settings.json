@@ -21,6 +21,15 @@
   "edit_predictions": { "mode": "subtle" },
   "use_system_prompts": false,
   "languages": {
+    "CSS": {
+      "tab_size": 2
+    },
+    "HTML": {
+      "tab_size": 2
+    },
+    "JavaScript": {
+      "tab_size": 2
+    },
     "TOML": {
       "format_on_save": "off"
     }
@@ -46,7 +55,7 @@
   "git_panel": {
     "button": false
   },
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"

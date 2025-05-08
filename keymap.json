@@ -14,7 +14,7 @@
       "z A": "editor::FoldAll",
       "z u": "editor::UnfoldAll",
       "space w": "workspace::Save",
-      "space a c": "assistant::ToggleFocus",
+      "space a c": "agent::ToggleFocus",
       "space b o": "pane::CloseInactiveItems",
       "space f k": "zed::OpenKeymap",
       "space f w": "pane::DeploySearch",
@@ -127,7 +127,7 @@
   {
     "context": "EmptyPane",
     "bindings": {
-      "space a c": "assistant::ToggleFocus",
+      "space a c": "agent::ToggleFocus",
       "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
       "space t t": "terminal_panel::ToggleFocus",
@@ -153,6 +153,12 @@
     "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel",
     "bindings": {
       "cmd-w": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "cmd-w": "workspace::ToggleRightDock"
     }
   }
 ]
