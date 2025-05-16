@@ -30,6 +30,9 @@
     "JavaScript": {
       "tab_size": 2
     },
+    "Markdown": {
+      "format_on_save": "off"
+    },
     "TOML": {
       "format_on_save": "off"
     }
