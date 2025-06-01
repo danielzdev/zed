@@ -63,7 +63,6 @@
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
     },
-    "enable_experimental_live_diffs": true,
     "button": false,
     "version": "2"
   },
@@ -81,6 +80,8 @@
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "chat_panel": { "button": "when_in_call" },
+  "search": { "button": false },
+  "debugger": { "button": false },
   "gutter": {
     "code_actions": false,
     "runnables": false
