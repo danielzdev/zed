@@ -20,6 +20,9 @@
   "features": { "edit_prediction_provider": "none" },
   "edit_predictions": { "mode": "subtle" },
   "use_system_prompts": false,
+  "vim": {
+    "use_system_clipboard": "on_yank"
+  },
   "languages": {
     "CSS": {
       "tab_size": 2
