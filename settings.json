@@ -20,6 +20,7 @@
   "features": { "edit_prediction_provider": "none" },
   "edit_predictions": { "mode": "subtle" },
   "use_system_prompts": false,
+  "inline_code_actions": false,
   "vim": {
     "use_system_clipboard": "on_yank"
   },
