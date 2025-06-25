@@ -21,10 +21,10 @@
       "space f g": "workspace::NewSearch",
       "space g c": "git::ExpandCommitEditor",
       "space g d": "git::Diff",
-      "space g g": "git_panel::ToggleFocus",
-      "space g l": ["task::Spawn", { "task_name": "lazygit", "reveal_target": "center" }],
-      "space g s": "git::ToggleStaged",
-      "space g D": "editor::ExpandAllDiffHunks",
+      "space g g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space g G": "git_panel::ToggleFocus",
+      "space g h s": "git::ToggleStaged",
+      "space g h d": "editor::ExpandAllDiffHunks",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
       "space p o": "workspace::Open",
@@ -54,7 +54,7 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space g p": "editor::ToggleSelectedDiffHunks",
-      "space g r": "git::Restore",
+      "space g h r": "git::Restore",
       "space l a": "editor::ToggleCodeActions"
     }
   },
