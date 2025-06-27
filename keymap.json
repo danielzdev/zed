@@ -23,8 +23,8 @@
       "space g d": "git::Diff",
       "space g g": ["task::Spawn", { "task_name": "lazygit" }],
       "space g G": "git_panel::ToggleFocus",
-      "space g h s": "git::ToggleStaged",
-      "space g h d": "editor::ExpandAllDiffHunks",
+      "space g s": "git::ToggleStaged",
+      "space g D": "editor::ExpandAllDiffHunks",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
@@ -56,7 +56,7 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space g p": "editor::ToggleSelectedDiffHunks",
-      "space g h r": "git::Restore"
+      "space g r": "git::Restore"
     }
   },
   // Insert mode
