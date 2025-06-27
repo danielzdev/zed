@@ -1,7 +1,7 @@
 [
   {
-    "label": "Run live server",
-    "command": "live-server",
+    "label": "npm run dev",
+    "command": "npm run dev",
     "hide": "always"
   },
   {
