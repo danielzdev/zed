@@ -104,7 +104,7 @@
       "r": "project_panel::Rename",
       "A": "project_panel::NewDirectory",
       "z": "project_panel::CollapseAllEntries",
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleRightDock"
     }
   },
   // Enables space e to toggle project panel

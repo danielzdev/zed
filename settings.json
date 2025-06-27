@@ -63,7 +63,7 @@
   },
   "scrollbar": { "show": "never" },
   "preview_tabs": { "enabled": false },
-  "project_panel": { "button": false },
+  "project_panel": { "button": false, "dock": "right" },
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "chat_panel": { "button": "when_in_call" },
