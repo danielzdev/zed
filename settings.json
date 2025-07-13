@@ -1,5 +1,5 @@
 {
-  "theme": "Tokyo Night",
+  "theme": "One Dark",
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -23,6 +23,30 @@
   "use_system_prompts": false,
   "inline_code_actions": false,
   "indent_guides": { "enabled": false },
+  "languages": {
+    "Python": {
+      "language_servers": ["basedpyright", "!pyright"]
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "binary": {
+        "path": ".venv/bin/basedpyright-langserver",
+        "arguments": ["--stdio"]
+      },
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        },
+        "basedpyright.analysis": {
+          "diagnosticMode": "workspace",
+          "inlayHints": {
+            "callArgumentNames": false
+          }
+        }
+      }
+    }
+  },
   "tabs": {
     "git_status": true,
     "file_icons": true,
@@ -49,8 +73,7 @@
       "provider": "zed.dev",
       "model": "claude-sonnet-4"
     },
-    "button": false,
-    "version": "2"
+    "button": false
   },
   "terminal": {
     "button": false,
