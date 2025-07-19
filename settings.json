@@ -1,5 +1,5 @@
 {
-  "theme": "One Dark",
+  "theme": "Tokyo Night",
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -85,7 +85,7 @@
   },
   "scrollbar": { "show": "never" },
   "preview_tabs": { "enabled": false },
-  "project_panel": { "button": false, "dock": "right" },
+  "project_panel": { "button": false, "dock": "left" },
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "chat_panel": { "button": "when_in_call" },
