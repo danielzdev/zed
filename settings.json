@@ -22,6 +22,9 @@
   "edit_predictions": { "mode": "subtle" },
   "use_system_prompts": false,
   "inline_code_actions": false,
+  "close_on_file_delete": true,
+  "snippet_sort_order": "top",
+  "use_smartcase_search": true,
   "indent_guides": { "enabled": false },
   "languages": {
     "Python": {
@@ -84,6 +87,7 @@
     "editor.document_highlight.read_background": "#00000000"
   },
   "scrollbar": { "show": "never" },
+  "tab_bar": { "show_nav_history_buttons": false },
   "preview_tabs": { "enabled": false },
   "project_panel": { "button": false, "dock": "left" },
   "outline_panel": { "button": false },
@@ -92,7 +96,6 @@
   "search": { "button": false },
   "debugger": { "button": false },
   "gutter": {
-    "code_actions": false,
     "folds": false,
     "min_line_number_digits": 2,
     "runnables": false
