@@ -1,5 +1,5 @@
 {
-  "theme": "Tokyo Night",
+  "theme": "Nordic",
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -9,7 +9,6 @@
   "buffer_font_features": { "calt": false },
   "cursor_blink": false,
   "extend_comment_on_newline": false,
-  "format_on_save": "off",
   "pane_split_direction_horizontal": "down",
   "pane_split_direction_vertical": "right",
   "tab_size": 2,
@@ -28,7 +27,21 @@
   "indent_guides": { "enabled": false },
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "!pyright"]
+      "language_servers": ["basedpyright", "ruff", "!pyright"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
     }
   },
   "lsp": {
@@ -56,10 +69,13 @@
     "show_diagnostics": "all"
   },
   "auto_install_extensions": {
+    "basedpyright": true,
     "emmet": true,
     "git-firefly": true,
     "ini": true,
     "material-icon-theme": true,
+    "nordic-nvim-theme": true,
+    "ruff": true,
     "tokyo-night": true,
     "toml": true
   },
@@ -101,7 +117,7 @@
     "runnables": false
   },
   "toolbar": {
-    "breadcrumbs": false,
+    "breadcrumbs": true,
     "quick_actions": false
   }
 }
