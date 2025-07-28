@@ -73,9 +73,8 @@
     "context": "GitPanel && ChangesList",
     "bindings": {
       "a": "git::StageAll",
-      "d": "git::RestoreFile",
       "c": "git::Commit",
-      "u": "git::UnstageAll",
+      "d": "git::RestoreFile",
       "P": "git::Push",
       "q": "workspace::ToggleLeftDock"
     }
