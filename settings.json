@@ -79,7 +79,6 @@
     "material-icon-theme": true,
     "nordic-nvim-theme": true,
     "ruff": true,
-    "tokyo-night": true,
     "toml": true
   },
   "git": {
