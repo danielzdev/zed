@@ -76,7 +76,7 @@
       "d": "git::RestoreFile",
       "c": "git::Commit",
       "u": "git::UnstageAll",
-      "p": "git::Push",
+      "P": "git::Push",
       "q": "workspace::ToggleLeftDock"
     }
   },
