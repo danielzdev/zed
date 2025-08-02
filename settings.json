@@ -91,7 +91,7 @@
   },
   "agent": {
     "default_model": {
-      "provider": "anthropic",
+      "provider": "zed.dev",
       "model": "claude-sonnet-4"
     },
     "button": false
