@@ -17,7 +17,7 @@
   "restore_on_startup": "last_session",
   "vertical_scroll_margin": 15,
   "always_treat_brackets_as_autoclosed": true,
-  "features": { "edit_prediction_provider": "none" },
+  "features": { "edit_prediction_provider": "zed" },
   "edit_predictions": { "mode": "subtle" },
   "use_system_prompts": false,
   "inline_code_actions": false,
@@ -27,7 +27,8 @@
   "indent_guides": { "enabled": false },
   "languages": {
     "Python": {
-      "language_servers": ["basedpyright", "ruff", "!pyright"],
+      "language_servers": ["pyright", "ruff"],
+      "tab_size": 4,
       "format_on_save": "on",
       "formatter": [
         {
@@ -48,20 +49,20 @@
     }
   },
   "lsp": {
-    "basedpyright": {
-      "binary": {
-        "path": ".venv/bin/basedpyright-langserver",
-        "arguments": ["--stdio"]
-      },
+    "pyright": {
       "settings": {
-        "python": {
-          "pythonPath": ".venv/bin/python"
-        },
-        "basedpyright.analysis": {
+        "python.analysis": {
           "diagnosticMode": "workspace",
           "inlayHints": {
             "callArgumentNames": false
           }
+        }
+      }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 120
         }
       }
     }
@@ -72,7 +73,6 @@
     "show_diagnostics": "all"
   },
   "auto_install_extensions": {
-    "basedpyright": true,
     "emmet": true,
     "git-firefly": true,
     "ini": true,
@@ -91,7 +91,7 @@
   },
   "agent": {
     "default_model": {
-      "provider": "zed.dev",
+      "provider": "anthropic",
       "model": "claude-sonnet-4"
     },
     "button": false
