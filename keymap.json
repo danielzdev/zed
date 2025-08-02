@@ -129,6 +129,8 @@
     "context": "EmptyPane",
     "bindings": {
       "space a c": "agent::ToggleFocus",
+      "space g g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space g G": "git_panel::ToggleFocus",
       "space p o": "workspace::Open",
       "space p r": "projects::OpenRecent",
       "space t t": "terminal_panel::ToggleFocus",
