@@ -110,6 +110,7 @@
   "project_panel": { "button": false, "dock": "left" },
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
+  "global_lsp_settings": { "button": false },
   "chat_panel": { "button": "when_in_call" },
   "search": { "button": false },
   "debugger": { "button": false },
