@@ -25,48 +25,6 @@
   "snippet_sort_order": "top",
   "use_smartcase_search": true,
   "indent_guides": { "enabled": false },
-  "languages": {
-    "Python": {
-      "language_servers": ["pyright", "ruff"],
-      "tab_size": 4,
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
-        {
-          "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    },
-    "Zig": {
-      "tab_size": 4
-    }
-  },
-  "lsp": {
-    "pyright": {
-      "settings": {
-        "python.analysis": {
-          "diagnosticMode": "workspace",
-          "inlayHints": {
-            "callArgumentNames": false
-          }
-        }
-      }
-    },
-    "ruff": {
-      "initialization_options": {
-        "settings": {
-          "lineLength": 120
-        }
-      }
-    }
-  },
   "tabs": {
     "git_status": true,
     "file_icons": true,
@@ -78,7 +36,6 @@
     "ini": true,
     "material-icon-theme": true,
     "nordic-nvim-theme": true,
-    "ruff": true,
     "toml": true
   },
   "git": {
