@@ -25,6 +25,44 @@
   "snippet_sort_order": "top",
   "use_smartcase_search": true,
   "indent_guides": { "enabled": false },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "language_servers": ["basedpyright", "ruff"],
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright": {
+          "disableOrganizeImports": true
+        }
+      }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lint": {
+            "extendSelect": ["I"]
+          }
+        }
+      }
+    }
+  },
   "tabs": {
     "git_status": true,
     "file_icons": true,
